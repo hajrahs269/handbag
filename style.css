@@ -13,6 +13,7 @@ nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+  margin:20px;
 }
 .container{
     max-width:1460px;
@@ -40,4 +41,77 @@ nav a {
     text-align: center;
     padding: 12px;
     color: #000;
+}
+#top-nav nav{
+  color:#1E1E1E;
+}
+#top-nav svg{
+  width:28px;
+  height:28px;
+  margin-top:-5px;
+}
+#top-nav{
+  padding:10px;
+  float:right;
+}
+#main-bar,
+#top-bar{
+  float:left;
+  width:100%;
+}
+main{
+  float:left;
+  width:100%;
+}
+#top-nav .sale-item{
+    background-color: #5C1A1B;
+    color: #fff;
+    display: inline;
+    padding: 10px 16px;
+    border: 1px solid #FF0000;
+}
+#top-nav li{
+  margin-left:10px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  background-color: #f0f0f0;
+  border-radius: 25px;
+  padding: 10px 15px;
+}
+
+.search-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #888;
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  flex: 1;
+  color: #333;
+}
+
+.search-input::placeholder {
+  color: #aaa;
+}
+#search-bar svg{
+    margin-top: 3px;
+    margin-bottom: -2px;
+}
+#search-bar{
+  float:left;
+  margin:20px;
+  margin-left: 200px;
+  width:50%;
+}
+.logo{
+    float: left;
+    margin-top: -45px;
 }
