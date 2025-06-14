@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Royal Bags PA</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="jquery-3.7.1.min.js"></script>
 </head>
 <body>
   <header>
@@ -68,6 +69,51 @@
     </div>
   </header>
   <main>
+    <div class="container">
+      <div class="promo-banner">
+      <div class="promo-content">
+        <div class="promo-title">Expert Care for Your Luxury Bags</div>
+        <div class="promo-text">
+          Trusted by thousands since 2009, Royal Bag Spa is Australia’s premiere destination to buy, sell, and restore designer handbags.
+        </div>
+        <a href="#" class="promo-link">
+          Discover Our Services <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+    <div class="slider-container">
+  <div class="slider-track">
+    <div class="slider-slide">
+      <img class="slider-image" src="slider-image.png" alt="Green Bag">
+      <div class="slider-content">
+        <h1>SELL WITH US</h1>
+        <p>Earn Up to 80% of the Selling Price</p>
+        <a href="#">Find out more →</a>
+      </div>
+    </div>
+    <div class="slider-slide">
+      <img class="slider-image" src="slider-image.png" alt="Green Bag">
+      <div class="slider-content">
+        <h1>SELL</h1>
+        <p>Earn Up to 80% of the Selling Price</p>
+        <a href="#">Find out more →</a>
+      </div>
+    </div>
+    <!-- Add more .slider-slide sections here if needed -->
+  </div>
+
+  <div class="slider-nav">
+    <span class="slider-arrow" id="slider-prev">&#10094;</span>
+    <span class="slider-arrow" id="slider-next">&#10095;</span>
+  </div>
+
+  <div class="slider-dots">
+    <span class="slider-dot active"></span>
+    <!-- Add more dots as needed for extra slides -->
+  </div>
+</div>
+
+  </div>
     <section class="banner">
       <h1>Royal Bags PA</h1>
       <p>Get the best deals today!</p>
@@ -78,6 +124,31 @@
   </main>
   <footer>
     <p>&copy; 2025 Royal Bags. All rights reserved.</p>
+    
+<script>
+  let sliderIndex = 0;
+
+  function updateSlider(index) {
+    const slideWidth = $('.slider-slide').outerWidth();
+    $('.slider-track').css('transform', 'translateX(' + (-index * slideWidth) + 'px)');
+    $('.slider-dot').removeClass('active').eq(index).addClass('active');
+  }
+
+  $('#slider-next').click(function () {
+    const totalSlides = $('.slider-slide').length;
+    if (sliderIndex < totalSlides - 1) {
+      sliderIndex++;
+      updateSlider(sliderIndex);
+    }
+  });
+
+  $('#slider-prev').click(function () {
+    if (sliderIndex > 0) {
+      sliderIndex--;
+      updateSlider(sliderIndex);
+    }
+  });
+</script>
   </footer>
 </body>
 </html>
