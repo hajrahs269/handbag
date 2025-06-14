@@ -5,12 +5,8 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #222;
   color: white;
-  padding: 1rem 2rem;
+  padding: 0;
 }
 
 nav ul {
@@ -18,9 +14,12 @@ nav ul {
   display: flex;
   gap: 1rem;
 }
-
+.container{
+    max-width:1460px;
+    margin:0 auto;
+}
 nav a {
-  color: white;
+  color: #000;
   text-decoration: none;
 }
 
@@ -28,4 +27,11 @@ nav a {
   text-align: center;
   background: #e0f7fa;
   padding: 3rem 1rem;
+}
+#main-bar{
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+#main-bar .container{
+    padding:10px;
 }
