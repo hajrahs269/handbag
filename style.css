@@ -29,9 +29,15 @@ nav a {
   padding: 3rem 1rem;
 }
 #main-bar{
-    border-top:1px solid #ccc;
-    border-bottom:1px solid #ccc;
+    border-top:1px solid #EBEBEB;
+    border-bottom:1px solid #EBEBEB;
 }
 #main-bar .container{
     padding:10px;
+}
+#coupon-offer{
+    background-color: #D2B797;
+    text-align: center;
+    padding: 12px;
+    color: #000;
 }
