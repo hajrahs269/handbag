@@ -1,2 +1,2 @@
-# handbag
-A handbag store
+# A Handbag E-Commerce Store
+Expert Care for Your Luxury Bags
