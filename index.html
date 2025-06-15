@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Royal Bags PA</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="jquery-3.7.1.min.js"></script>
+  <link rel="stylesheet" href="public/assets/css/style.css" />
+  <script src="public/assets/js/jquery-3.7.1.min.js"></script>
 </head>
 <body>
   <header>
@@ -84,19 +84,23 @@
     <div class="slider-container">
   <div class="slider-track">
     <div class="slider-slide">
-      <img class="slider-image" src="slider-image.png" alt="Green Bag">
+      <img class="slider-image" src="public/assets/images/slider-image.png" alt="Green Bag">
       <div class="slider-content">
-        <h1>SELL WITH US</h1>
-        <p>Earn Up to 80% of the Selling Price</p>
-        <a href="#">Find out more →</a>
+        <div class="slider-content-wrap">
+          <h1>SELL WITH US</h1>
+          <p>Earn Up to 80% of the Selling Price</p>
+          <a href="#">Find out more →</a>
+        </div>
       </div>
     </div>
     <div class="slider-slide">
-      <img class="slider-image" src="slider-image.png" alt="Green Bag">
+      <img class="slider-image" src="public/assets/images/slider-image.png" alt="Green Bag">
       <div class="slider-content">
-        <h1>SELL</h1>
-        <p>Earn Up to 80% of the Selling Price</p>
-        <a href="#">Find out more →</a>
+        <div class="slider-content-wrap">
+          <h1>SELL</h1>
+          <p>Earn Up to 80% of the Selling Price</p>
+          <a href="#">Find out more →</a>
+        </div>
       </div>
     </div>
     <!-- Add more .slider-slide sections here if needed -->
@@ -109,22 +113,227 @@
 
   <div class="slider-dots">
     <span class="slider-dot active"></span>
+    <span class="slider-dot"></span>
     <!-- Add more dots as needed for extra slides -->
   </div>
 </div>
 
   </div>
-    <section class="banner">
-      <h1>Royal Bags PA</h1>
-      <p>Get the best deals today!</p>
+
+    <section class="cards">
+      <div class="card-wrapper">
+    <div class="card">
+      <img src="public/assets/images/image.png" alt="Restoration">
+      <h3>Restoration</h3>
+      <p>Bring your bag back to life with expert craftsmanship.</p>
+    </div>
+
+    <div class="card">
+      <img src="public/assets/images/image-2.png" alt="Buy">
+      <h3>Buy</h3>
+      <p>Explore authenticated pre-loved luxury bags.</p>
+    </div>
+
+    <div class="card">
+      <img src="public/assets/images/image-3.png" alt="Sell">
+      <h3>Sell</h3>
+      <p>Let go of your bags – we’ll handle the rest.</p>
+    </div>
+
+    <div class="card">
+      <img src="public/assets/images/image-4.png" alt="Authenticate">
+      <h3>Authenticate</h3>
+      <p>Every bag we list is thoroughly authenticated.</p>
+    </div>
+
+    <div class="card">
+      <img src="public/assets/images/image-5.png" alt="Designer Brands">
+      <h3>Designer Brands</h3>
+      <p>Shop Chanel, Louis Vuitton, Dior & more.</p>
+    </div>
+  </div>
     </section>
-    <section class="products">
-      <h2>Featured Products</h2>
+    <section id="featured-products">
+      <div class="container">
+<h2 class="fp-title">Featured Products <button class="fp-scroll-btn" onclick="fpScrollRight()">View All</button></h2>
+<div class="fp-carousel-container" id="fp-carousel">
+  <div class="fp-product-card">
+    <div class="fp-like-count">60 <span></span></div>
+    <img src="public/assets/images/feature-product-1.jpg" alt="Dior Tote">
+    <div class="fp-product-title">CHRISTIAN DIOR</div>
+    <div class="fp-product-desc">Oblique Mini Book Tote Phone Bag Blue</div>
+    <div class="fp-price"><del>$3,500</del><span class="fp-discount">$2,200</span></div>
+    <div class="fp-icons"><span class="handshake-ico"></span> Direct Shipping </div>
+    <div class="fp-icons"><span class="auth-ico"></span> Authenticity Guaranteed</div>
+  </div>
+
+  <div class="fp-product-card">
+    <div class="fp-like-count">229 <span></span></div>
+    <img src="public/assets/images/feature-product-2.png" alt="Jimmy Choo Clutch">
+    <div class="fp-product-title">JIMMY CHOO</div>
+    <div class="fp-product-desc">Glitter Acrylic Chain Clutch</div>
+    <div class="fp-price"><del>$1,200</del><span class="fp-discount">$500</span></div>
+    <div class="fp-icons"><span class="handshake-ico"></span> Direct Shipping </div>
+    <div class="fp-icons"><span class="auth-ico"></span> Authenticity Guaranteed</div>
+  </div>
+
+  <div class="fp-product-card">
+    <div class="fp-like-count">20 <span></span></div>
+    <img src="public/assets/images/feature-product-3.jpg" alt="Celine Wallet">
+    <div class="fp-product-title">CELINE</div>
+    <div class="fp-product-desc">Mallion Triomphe Leather Wallet on Chain</div>
+    <div class="fp-price"><del>$3,100</del><span class="fp-discount">$1,580</span></div>
+    <div class="fp-icons"><span class="handshake-ico"></span> Direct Shipping </div>
+    <div class="fp-icons"><span class="auth-ico"></span> Authenticity Guaranteed</div>
+  </div>
+
+  <div class="fp-product-card">
+    <div class="fp-like-count">57 <span></span></div>
+    <img src="public/assets/images/feature-product-4.jpg" alt="LV Wallet">
+    <div class="fp-product-title">LOUIS VUITTON</div>
+    <div class="fp-product-desc">Steamer Wearable Wallet Black/Grey</div>
+    <div class="fp-price"><del>$3,250</del><span class="fp-discount">$2,750</span></div>
+    <div class="fp-icons"><span class="handshake-ico"></span> Direct Shipping </div>
+    <div class="fp-icons"><span class="auth-ico"></span> Authenticity Guaranteed</div>
+  </div>
+
+  <div class="fp-product-card">
+    <div class="fp-like-count">41 <span></span></div>
+    <img src="public/assets/images/feature-product-5.jpg" alt="Dior Wallet">
+    <div class="fp-product-title">CHRISTIAN DIOR</div>
+    <div class="fp-product-desc">Oblique Compact Wallet Navy</div>
+    <div class="fp-price"><del>$840</del><span class="fp-discount">$600</span></div>
+    <div class="fp-icons"><span class="handshake-ico"></span> Direct Shipping </div>
+    <div class="fp-icons"><span class="auth-ico"></span> Authenticity Guaranteed</div>
+  </div>
+</div>
+
+<!-- Scroll Button -->
+
+
+</div>
+    </section>
+        <section class="cards">
+          <div class="container">
+          <h2>What Makes Us Unique</h2>
+      <div class="card-wrapper">
+    <div class="card">
+      <img src="public/assets/images/image-6.jpg" alt="TRUSTED EXPERTS">
+      <h3>TRUSTED EXPERTS</h3>
+      <p>15+ years of luxury care expertise.</p>
+    </div>
+
+    <div class="card">
+      <img src="public/assets/images/image-7.jpg" alt="WHITE-GLOVE RESTORATION">
+      <h3>WHITE-GLOVE RESTORATION</h3>
+      <p>Bring new life to your designer pieces.</p>
+    </div>
+
+    <div class="card">
+      <img src="public/assets/images/image-8.jpg" alt="CURATED DESIGNERS">
+      <h3>CURATED DESIGNERS</h3>
+      <p>Only the best, most coveted labels.</p>
+    </div>
+
+    <div class="card">
+      <img src="public/assets/images/image-9.jpg" alt="100% AUTHENTICATED">
+      <h3>100% AUTHENTICATED</h3>
+      <p>Our in-house team ensures every item is genuine.</p>
+    </div>
+  </div>
+  </div>
     </section>
   </main>
-  <footer>
-    <p>&copy; 2025 Royal Bags. All rights reserved.</p>
-    
+   <footer>
+      <div class="container">
+        <div class="footer-container">
+        <div class="footer-section">
+          <h4>Our Services</h4>
+          <ul>
+            <li>Professional Handbag Cleaning</li>
+            <li>Expert Handbag Repair</li>
+            <li>Handbag Restoration</li>
+            <li>Handbag Authentication</li>
+            <li>Leather Care Products</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Sell</h4>
+          <ul>
+            <li>Consign Designer Handbag</li>
+            <li>Luxury Apparel Direct Purchase</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Shop</h4>
+          <ul>
+            <li>Bags</li>
+            <li>Small Leather Goods</li>
+            <li>Shoes</li>
+            <li>Watches</li>
+            <li>Accessories</li>
+            <li>Jewellery</li>
+            <li>Care Products</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Help</h4>
+          <ul>
+            <li>Help Center</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Royal Bag Spa – Since 2009</h4>
+          <ul>
+            <li>Our Store</li>
+            <li>Contact Information</li>
+            <li>Affiliate program</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>Australia ($ AUD) • English AU</p>
+        <div class="footer-links">
+          Accessibility Statement &nbsp;|&nbsp;
+          Legal Information &nbsp;|&nbsp;
+          Terms &nbsp;|&nbsp;
+          Privacy Policy & Cookies
+        </div>
+        <div class="social-icons">
+          <img src="public/assets/images/youtube-ico.png" alt="YouTube">
+          <img src="public/assets/images/facebook-ico.png" alt="Facebook">
+          <img src="public/assets/images/instagram-ico.png" alt="Instagram">
+          <img class="no-opacity" src="public/assets/images/pinterest-ico.png" alt="Pinterest">
+        </div>
+      </div>
+    </div>
+      <div class="footer-white">
+        <div class="container">
+          <div class="footer-left">
+              <p>
+                Royal Bag Spa has no association and/or affiliation with the brands whose items are offered for sale on its website/app.
+                All authentication services are performed independently by Vestiaire Collective.
+              </p>
+              <div class="payment-icons">
+                <img src="public/assets/images/cards.png" width="200" alt="Amex">
+                <img src="public/assets/images/stores.png" width="126" alt="Zip">
+              </div>
+            </div>
+            <div class="footer-right">
+              <p><strong>ROYAL BAG SPA</strong></p>
+              <p>Australia’s original handbag care destination. Buy, sell, restore or authenticate luxury handbags with complete confidence.</p>
+              <p>&copy;2025 Royal Bag Spa</p>
+            </div>
+          </div>
+      </div>
+<script>
+  function fpScrollRight() {
+    document.getElementById('fp-carousel').scrollBy({ left: 300, behavior: 'smooth' });
+  }
+</script>
 <script>
   let sliderIndex = 0;
 
