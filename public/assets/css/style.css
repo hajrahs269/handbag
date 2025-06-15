@@ -8,7 +8,41 @@ header {
   color: white;
   padding: 0;
 }
-
+nav ul ul a:hover{
+  background-color:#8A7E70;
+}
+nav ul ul a{
+    display: inline-block;
+    padding: 15px;
+    font-size: large;
+    width: 190px;
+    font-size: 16px;
+}
+nav ul li:hover > ul{
+  display: flex;
+}
+#main-bar nav > ul > li > a{
+  padding: 20px 0;
+}
+nav ul ul {
+    position: absolute;
+    list-style: none;
+    gap: 0 !important;
+    margin: 0;
+    flex-direction: column;
+    padding: 0;
+    background-color: #fff;
+    top: 38px;
+    z-index: 100;
+    width: 220px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: none;
+    left: -20px;
+}
+nav ul li{
+    position: relative;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -35,7 +69,7 @@ nav a {
     border-bottom:1px solid #EBEBEB;
 }
 #main-bar .container{
-    padding:10px;
+    padding:5px 10px;
 }
 #coupon-offer{
     background-color: #D2B797;
@@ -52,7 +86,7 @@ nav a {
   margin-top:-5px;
 }
 #top-nav{
-  padding:10px;
+  padding:5px;
   float:right;
 }
 #main-bar,
@@ -63,6 +97,10 @@ nav a {
 main{
   float:left;
   width:100%;
+}
+.slide-2 .slider-content,
+.slide-2 .slider-content-wrap{
+  background-color: #333334;
 }
 #top-nav .sale-item{
     background-color: #5C1A1B;
@@ -108,7 +146,7 @@ main{
 }
 #search-bar{
   float:left;
-  margin:20px;
+  margin:10px;
   margin-left: 230px;
   width:50%;
 }
@@ -121,7 +159,7 @@ main{
 }
  .promo-banner {
   background-color: #fef0e5;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 2rem;
   max-width: 100%;
   margin:30px 0;
 }
@@ -439,6 +477,10 @@ main{
 .fp-scroll-btn{
   float: right;
 }
+.footer-bottom .site-lang{
+  color:#fff;
+  margin-bottom: 30px;
+}
 footer {
     float: left;
     background-color: #111;
@@ -450,8 +492,8 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
-  margin-bottom: 20px;
-  margin-top:20px;
+  margin-bottom: 30px;
+  margin-top:30px;
 }
 .footer-section h4 {
     letter-spacing: 1px;
@@ -466,14 +508,34 @@ footer {
   padding: 0;
 }
 .footer-section ul li {
-  margin: 6px 0;
+  margin: 8px 0;
   font-size: 14px;
   color: #ABABAB;
 }
+.site-desc{
+  color: #000;
+}
+.site-credit{
+  color: inherit;
+}
+.footer-links a:hover{
+  color:#fff;
+}
+.footer-links a{
+  color: #ABABAB;
+  text-decoration: none;
+}
+.site-title{
+  color: #000;
+  font-size: 14px;
+}
+.payment-icons{
+  margin-top:30px;
+}
 .footer-bottom {
   border-top: 1px solid #333;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -494,9 +556,13 @@ footer {
 .payment-icons img {
   margin: 0;
 }
+.site-flag{
+    margin-bottom: -5px;
+    margin-right: 6px;
+}
 .footer-links{
   float: left;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 .footer-white{
     background-color: #fff;
