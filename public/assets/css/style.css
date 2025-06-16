@@ -642,3 +642,36 @@ footer {
       padding-left: 10px;
       align-self: center;
     }
+    
+.benefits-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.benefit-card {
+  text-align: left;
+  padding: 20px;
+}
+
+.benefit-card img {
+  width: 40px;
+  height: auto;
+  margin-bottom: 0;
+}
+
+.benefit-card h3 {
+  font-size: 18px;
+  font-weight: 200;
+  text-decoration: underline;
+  margin-bottom: 8px;
+}
+
+.benefit-card p {
+  font-size: 15px;
+  color: #444;
+}
