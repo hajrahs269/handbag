@@ -105,9 +105,10 @@ main{
 #top-nav .sale-item{
     background-color: #5C1A1B;
     color: #fff;
-    display: inline;
+    display: inline-block;
     padding: 10px 16px;
     border: 1px solid #FF0000;
+    margin-top: -10px;
 }
 #top-nav li{
   margin-left:10px;
@@ -476,7 +477,7 @@ main{
 }
 
 .fp-scroll-btn:hover {
-  background: #333;
+  background: #fefefe;
 }
 
 #featured-products {
@@ -1857,4 +1858,55 @@ code {
   .form-section.payment {
     flex: 0 0 100%;
   }
+}
+
+.thankyou-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.thankyou-card {
+  background: white;
+  padding: 60px;
+  border-radius: 5px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 700px;
+  width: 30%;
+  min-width: 340px;
+}
+
+.thankyou-card h1 {
+  color: #28a745;
+  margin-bottom: 35px;
+  margin-top: 10px;
+}
+
+.thankyou-card p {
+  font-size: 1.05em;
+  color: #444;
+  margin: 10px 0;
+}
+.thankyou-card img{
+  max-width: 150px;
+}
+.home-btn {
+      width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+        box-sizing: border-box;
+}
+
+.home-btn:hover {
+  background: #0056b3;
 }

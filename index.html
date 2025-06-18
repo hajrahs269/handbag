@@ -54,8 +54,8 @@
             <nav>
             <ul>
                 <li><a href="products.html">Handbags</a></li>
-                <li><a href="#">Designer Brands</a></li>
-                <li><a href="#">Other Services</a></li>
+                <li><a href="products.html">Designer Brands</a></li>
+                <li><a href="products.html">Other Services</a></li>
                 <li><a>Shop Onlines</a>
                   <ul class="sub-menu">
                   <li><a href="#">Bags</a></li>
@@ -80,7 +80,7 @@
         <div class="promo-text">
           Trusted by thousands since 2009, Royal Bag Spa is Australia’s premiere destination to buy, sell, and restore designer handbags.
         </div>
-        <a href="#" class="promo-link">
+        <a href="products.html" class="promo-link">
           Discover Our Services <span class="arrow">→</span>
         </a>
       </div>
@@ -93,7 +93,7 @@
         <div class="slider-content-wrap">
           <h1>SELL WITH US</h1>
           <p>Earn Up to 80% of the Selling Price</p>
-          <a href="#">Find out more →</a>
+          <a href="chanel.html">Find out more →</a>
         </div>
       </div>
     </div>
@@ -103,7 +103,7 @@
         <div class="slider-content-wrap">
           <h1>NEW ARRIVALS</h1>
           <p>Shop online or in-store up to 80% off retails</p>
-          <a href="#">Find out more →</a>
+          <a href="chanel.html">Find out more →</a>
         </div>
       </div>
     </div>
@@ -159,7 +159,7 @@
     </section>
     <section id="featured-products">
       <div class="container">
-<h2 class="fp-title">Featured Products <button class="fp-scroll-btn" onclick="fpScrollRight()">View All</button></h2>
+<h2 class="fp-title">Featured Products <button href="products.html" class="fp-scroll-btn" onclick="fpScrollRight()">View All</button></h2>
 <div class="fp-carousel-container" id="fp-carousel">
   <div class="fp-product-card">
     <div class="fp-like-count">60 <span></span></div>
@@ -333,60 +333,8 @@
             </div>
           </div>
       </div>
-<script>
-  function fpScrollRight() {
-    document.getElementById('fp-carousel').scrollBy({ left: 300, behavior: 'smooth' });
-  }
-</script>
-<script>
-   let sliderIndex = 0;
-  const totalSlides = $('.slider-slide').length;
-  const autoplayInterval = 5000; // 5 seconds
 
-  function updateSlider(index) {
-    const slideWidth = $('.slider-slide').outerWidth();
-    $('.slider-track').css('transform', 'translateX(' + (-index * slideWidth) + 'px)');
-    $('.slider-dot').removeClass('active').eq(index).addClass('active');
-  }
-
-  $('#slider-next').click(function () {
-    sliderIndex = (sliderIndex + 1) % totalSlides;
-    updateSlider(sliderIndex);
-  });
-
-  $('#slider-prev').click(function () {
-    sliderIndex = (sliderIndex - 1 + totalSlides) % totalSlides;
-    updateSlider(sliderIndex);
-  });
-
-  // Autoplay Function
-  function startAutoplay() {
-    setInterval(() => {
-      sliderIndex = (sliderIndex + 1) % totalSlides;
-      updateSlider(sliderIndex);
-    }, autoplayInterval);
-  }
-
-  $(document).ready(function () {
-    startAutoplay();
-  });
-  
-  document.addEventListener("DOMContentLoaded", function () {
-    const thumbs = document.querySelectorAll('.fp-thumb');
-    
-    if (thumbs.length > 0) {
-      thumbs.forEach(img => {
-        const original = img.src;
-        const hover = img.getAttribute('data-hover');
-        
-        if (hover) {
-          img.addEventListener('mouseover', () => img.src = hover);
-          img.addEventListener('mouseout', () => img.src = original);
-        }
-      });
-    }
-  });
-</script>
+<script src="public/assets/js/main.js"></script>
   </footer>
 </body>
 </html>
