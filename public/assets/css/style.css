@@ -1597,8 +1597,15 @@ code {
 #main-bar{
   border-top:none;
 }
+.fp-filter-bar{
+    justify-content: space-evenly;
+  
+}
+.fp-filter-button {
+    width: 150px;
+}
 .checkout-container h1{
-      margin: 0;
+    margin: 0;
     padding-left: 20px;
 }
 .cart-item img {
