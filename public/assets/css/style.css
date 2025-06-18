@@ -946,7 +946,7 @@ section.title{
 }
 section.title h1{
   font-size: 54px;
-  margin: 10px 0 20px 0;
+  margin: 40px 0 20px 0;
 }
 .prod-sku{
   font-size: 14px;
@@ -1315,15 +1315,19 @@ form {
 }
 
 .cart-checkout {
-  width: 100%;
-  padding: 20px;
-  margin-top: 20px;
-  font-size: 16px;
-  background: #333;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    background: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
 }
 
 .cart-promo {
@@ -1703,5 +1707,154 @@ code {
   }
   #cmnt-send {
     margin-top: 10px;
+  }
+}
+
+.checkout-container .order-summary {
+  background: #fafafa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 25px;
+  font-size: 0.95em;
+  color: #333;
+}
+
+.checkout-container .order-summary h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.checkout-container .order-summary p {
+  margin: 6px 0;
+}
+
+.checkout-container .total-price {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #000;
+}
+
+.form-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+.form-section {
+  flex: 1;
+  min-width: 280px;
+}
+
+.form-section h2 {
+  font-size: 1.2em;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.form-section label {
+  display: block;
+  margin-bottom: 15px;
+  color: #555;
+  font-size: 0.95em;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"] {
+    width: 100%;
+    padding: 15px 12px;
+    margin-top: 5px;
+    border: 1px solid #000000;
+    border-radius: 0;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+.form-section .price-summary {
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 25px 0;
+  text-align: center;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.form-section .submit-btn {
+  width: 100%;
+  padding: 14px;
+  background: #28a745;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #218838;
+}
+.checkout-container{
+  padding: 40px 0 60px;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .form-columns {
+    flex-direction: column;
+  }
+}
+
+.billing-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 25px;
+}
+
+.billing-grid label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.95em;
+  color: #555;
+}
+
+.billing-grid textarea {
+  margin-top: 5px;
+  padding: 10px 12px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Make notes span full width */
+.notes-field {
+  grid-column: 1 / -1;
+}
+
+
+@media (max-width: 768px) {
+  .billing-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Set width ratio: 60% billing, 40% payment */
+.form-section.billing {
+  flex: 0 0 55%;
+}
+
+.form-section.payment {
+  flex: 0 0 40%;
+}
+
+@media (max-width: 768px) {
+  .form-section.billing,
+  .form-section.payment {
+    flex: 0 0 100%;
   }
 }

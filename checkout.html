@@ -72,128 +72,83 @@
     </div>
   </header>
   <main>
-<section class="cart-section">
-    <div class="container">
-      <div class="cart-container">
-      <div class="cart-bag">
-        <h1>Shopping Bag</h1>
-        <hr/>
-        <div class="cart-item">
-          <span class="cart-remove">×</span>
-          <img src="public/assets/images/bag-1.png" alt="Chanel Bag"/>
-          <div class="cart-details">
-            <h3>Chanel</h3>
-            <p class="cart-product-desc">CHANEL Quilted Caviar Leather</p>
-            <p class="cart-condition">✔ Good Condition</p>
-          </div>
-          <div class="cart-price">$2,900 <br /><span class="price-notice"> import duties included</span></div>
-        </div>
-        <hr/>
-        <div class="cart-item">
-          <span class="cart-remove">×</span>
-          <img src="public/assets/images/bag-2.png" alt="Louis Vuitton Bag"/>
-          <div class="cart-details">
-            <h3>Louis Vuitton</h3>
-            <p class="cart-product-desc">Monogram Canvas Pallas BB Bag</p>
-            <p class="cart-condition">✔ Good Condition</p>
-          </div>
-          <div class="cart-price">$1,950<br /><span class="price-notice"> import duties included</span></div>
-        </div>
-      </div>
-      <div class="cart-summary">
-        <h2>Summary</h2>
-        <div class="cart-line"><span>Subtotal</span><span>$4850.00</span></div>
-        <div class="cart-line"><span>Delivery</span><span>$10.00</span></div>
-        <hr/>
-        <div class="cart-total">
-          <table>
-          <tbody>
-            <tr>
-              <td class="total" width="50%"><strong>Total</strong></td>
-              <td class="item-name" width="50%"><span class="cart-aud">AUD</span> <strong>$4860.00</strong><p class="cart-note">Import Duties Included</p></td>
-            </tr>
-          </tbody>  
-          </table>
-        </div>
-        <a href="checkout.html" class="cart-checkout">Go To Checkout</a>
-        <div class="cart-promo">
-          <strong>Download The App For 10% Off</strong>
-          <p>App-Only: Use Code <code>NC10FF</code> At Checkout For 10% Off Your First Order. Selected Styles Only.</p>
-          <small>T&Cs Apply</small>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section class="support-section-main">
+ <div class="checkout-container">
   <div class="container">
-<div class="support-section">
-  <div class="support-text">
-    <h2>Need help?</h2>
-    <p>
-      Contact our global Customer Service team, you can reach us by phone or email.
-      Alternatively, you may find the answer in our 
-      <a href="#">Frequently Asked Questions page</a>.
-    </p>
-  </div>
-  <div class="support-options">
-    <div class="support-item">
-      <span class="support-icon call"></span>
-      <h3>Call us</h3>
-      <p><strong>(03) 9654 1148</strong></p>
-      <p>Available</p>
-      <p>Mon-Fri: 10:30 AM - 6:00 PM</p>
-      <p>Saturday: 11 AM - 3:00 PM</p>
-      <p>Closed On Sunday</p>
-    </div>
-    <div class="support-item">
-      <span class="support-icon email"></span>
-      <h3>Email us</h3>
-      <p><a href="#">Click here to send us an email</a></p>
-    </div>
-    <div class="support-item">
-      <span class="support-icon faq"></span>
-      <h3>FAQs</h3>
-      <p>Find the answers you need in our <a href="#">FAQs</a></p>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<section class="signup-section-main">
-  <div class="container">
-<div class="signup-section">
-  <div class="signup-text">
-    <h2>Never miss a thing</h2>
-    <p>Sign up for promotions, tailored new arrivals, stock updates and more – straight to your inbox.</p>
-  </div>
-  <form class="signup-form">
-    <fieldset>
-      <legend>GET UPDATES BY</legend>
+    <h1>Checkout</h1>
+    <form action="thankyou.html" class="checkout-form" method="post">
+      <div class="form-columns">
 
-      <label class="checkbox-label">
-        <input type="checkbox" name="update-by" value="email" checked>
-        Email
+        <!-- Left: Billing Info -->
+       <section class="form-section billing">
+<h2>Billing Details</h2>
+  <div class="billing-grid">
+    <label>Full Name:
+      <input type="text" name="fullname" required />
+    </label>
+    <label>Email:
+      <input type="email" name="email" required />
+    </label>
+    <label>Phone Number:
+      <input type="text" name="phone" required />
+    </label>
+    <label>Company Name:
+      <input type="text" name="company" />
+    </label>
+    <label>Address:
+      <input type="text" name="address" required />
+    </label>
+    <label>City:
+      <input type="text" name="city" required />
+    </label>
+    <label>Postal Code:
+      <input type="text" name="zip" required />
+    </label>
+    <label>Country:
+      <input type="text" name="country" required />
+    </label>
+
+    <!-- Full width textarea for notes -->
+    <div class="notes-field">
+      <label>Order Notes:
+        <textarea name="notes" placeholder="Notes about your order, e.g. delivery instructions."></textarea>
       </label>
-
-      <input type="email" placeholder="Your email address" required>
-
-      <label class="checkbox-label">
-        <input type="checkbox" name="update-by" value="sms">
-        SMS
-      </label>
-
-      <button type="submit">Sign Up</button>
-
-      <p class="consent-text">
-        By signing up, you consent to receiving marketing by email and/or SMS and acknowledge you have read our 
-        <a href="#">Privacy Policy</a>. Unsubscribe anytime at the bottom of our emails or by replying STOP to any of our SMS.
-      </p>
-    </fieldset>
-  </form>
-</div>
-</div>
+    </div>
+  </div>
 </section>
+
+        <!-- Right: Payment Info -->
+        <section class="form-section payment">
+          <h2>Payment</h2>
+          <label>Card Number:
+            <input type="text" name="cardnumber" required />
+          </label>
+          <label>Expiry Date:
+            <input type="text" name="expiry" placeholder="MM/YY" required />
+          </label>
+          <label>CVV:
+            <input type="text" name="cvv" required />
+          </label>
+
+          <div class="order-summary">
+          <h3>Order Summary</h3>
+          <p><strong>Item:</strong> Chanel</p>
+          <p><strong>Description:</strong> CHANEL Quilted Caviar Leather</p>
+          <p><strong>Price:</strong> $4850.00</p>
+          <p><strong>Delivery:</strong> $10.00</p>
+          <p><strong>Subtotal:</strong> $4850.00</p>
+        </div>
+
+          <div class="price-summary">
+             <p><strong>Total:</strong> <span class="total-price">$4860.00</span></p>
+          </div>
+
+          <button type="submit" class="submit-btn">Place Order</button>
+        </section>
+
+      </div>
+    </form>
+  </div>
+  </div>
   </main>
    <footer>
       <div class="container">
